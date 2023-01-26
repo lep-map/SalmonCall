@@ -61,7 +61,7 @@ BEGIN{
 			gs1 = g1[s]
 			gs2 = g2[s]
 			gs3 = g3[s]
-			for (i = 2; i <= NF; i+=4) {
+			for (i = 2; i < NF; i+=4) {
 				c1 = $(i+as1)
 				c2 = $(i+as2)
 				l[1] = ps1 + c1 * fs1 + c2 * gs1
